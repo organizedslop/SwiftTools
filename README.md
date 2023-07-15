@@ -7,12 +7,20 @@ A collection of extensions and SwiftUI Views.
 
 ---
 
-##Extensions
+## Extensions
+
+### String
+
+#### parseHTML
 
 
 ---
 
-##Views
+## Views
+
+### AttributedText
+
+### MarqueeText
 
 
 ---
