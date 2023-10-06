@@ -11,18 +11,39 @@ import SwiftUI
 
 struct ContentView: View {
 
+    let viewToOverlay: AnyView =
+        AnyView(
+            VStack(alignment: .leading) {
+                HStack(spacing: 2) {
+                    Image(systemName: "checkmark.circle")
+                    Text("Overlay custom views")
+                }
+                HStack(spacing: 2) {
+                    Image(systemName: "checkmark.circle")
+                    Text("Additional overlay")
+                }
+            }
+        )
+
 
     var body: some View {
     
         DynamicStack(.vertical) {
            
             let text =  """
-                <h1>Here is a Title</h1>
+                <h1>Attributed Text</h1>
+                <h2>Subheading</h2>
+                <h3>Heading3</h3>
                 <p>This is a paragraph.</p>
+                <b>Bold</b>
+                <i>Italics</i>
+                <u>Underline</u>
+                <s>Strikethrough</s>
+                <sup>Superscript</sup>
+                <sub>Subscript</sub>
                 """
             
             AttributedText(text)
-                .border(.red)
            
             DynamicStack(.horizontal) {
                 StatusView("Success", status: .success)
@@ -36,6 +57,7 @@ struct ContentView: View {
             }
             .padding()
         }
+        .overlayAppInfo(include: viewToOverlay)
     }
 }
 

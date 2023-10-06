@@ -10,18 +10,14 @@
 		A11C0F752AC34479009A7733 /* SwiftTools.docc in Sources */ = {isa = PBXBuildFile; fileRef = A11C0F742AC34479009A7733 /* SwiftTools.docc */; };
 		A11C0F812AC34479009A7733 /* SwiftTools.h in Headers */ = {isa = PBXBuildFile; fileRef = A11C0F732AC34479009A7733 /* SwiftTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A11C0FB52AC35380009A7733 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11C0FB42AC35380009A7733 /* StatusView.swift */; };
-		A11C0FB62AC3539D009A7733 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11C0FB42AC35380009A7733 /* StatusView.swift */; };
 		A12AE6DC2AC515B000A3AE9C /* SwiftTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11C0F702AC34479009A7733 /* SwiftTools.framework */; platformFilter = ios; };
 		A12AE6DD2AC515B000A3AE9C /* SwiftTools.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A11C0F702AC34479009A7733 /* SwiftTools.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A12AE6E82AC51EAB00A3AE9C /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AE6E72AC51EAB00A3AE9C /* ColorExtensions.swift */; };
 		A12AE6EB2AC51F6000A3AE9C /* AttributedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AE6EA2AC51F6000A3AE9C /* AttributedText.swift */; };
+		A1ADFD252ACF22E000DD0C14 /* OverlayAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADFD242ACF22E000DD0C14 /* OverlayAppInfo.swift */; };
 		A1F9ABB82AC53570000B971F /* SwiftToolsDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F9ABAD2AC53570000B971F /* SwiftToolsDemoApp.swift */; };
 		A1F9ABB92AC53570000B971F /* SwiftToolsDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F9ABB52AC53570000B971F /* SwiftToolsDemoApp.swift */; };
-		A1F9ABBA2AC53570000B971F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F9ABB42AC53570000B971F /* ContentView.swift */; };
-		A1F9ABBB2AC53570000B971F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F9ABAE2AC53570000B971F /* Assets.xcassets */; };
 		A1F9ABBC2AC53570000B971F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F9ABB62AC53570000B971F /* Assets.xcassets */; };
-		A1F9ABBD2AC53570000B971F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F9ABB72AC53570000B971F /* Preview Assets.xcassets */; };
-		A1F9ABBE2AC53570000B971F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F9ABB32AC53570000B971F /* Preview Assets.xcassets */; };
 		A1F9ABBF2AC53570000B971F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F9ABB02AC53570000B971F /* Preview Assets.xcassets */; };
 		A1F9ABC02AC53570000B971F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F9ABB12AC53570000B971F /* ContentView.swift */; };
 		A1F9ABC22AC8687D000B971F /* MarqueeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F9ABC12AC8687D000B971F /* MarqueeText.swift */; };
@@ -62,15 +58,12 @@
 		A11C0FB42AC35380009A7733 /* StatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
 		A12AE6E72AC51EAB00A3AE9C /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		A12AE6EA2AC51F6000A3AE9C /* AttributedText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedText.swift; sourceTree = "<group>"; };
+		A1ADFD242ACF22E000DD0C14 /* OverlayAppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayAppInfo.swift; sourceTree = "<group>"; };
 		A1F9ABAD2AC53570000B971F /* SwiftToolsDemoApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftToolsDemoApp.swift; sourceTree = "<group>"; };
-		A1F9ABAE2AC53570000B971F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1F9ABB02AC53570000B971F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1F9ABB12AC53570000B971F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A1F9ABB32AC53570000B971F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A1F9ABB42AC53570000B971F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A1F9ABB52AC53570000B971F /* SwiftToolsDemoApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftToolsDemoApp.swift; sourceTree = "<group>"; };
 		A1F9ABB62AC53570000B971F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A1F9ABB72AC53570000B971F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1F9ABC12AC8687D000B971F /* MarqueeText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarqueeText.swift; sourceTree = "<group>"; };
 		A1F9ABC32AC868E7000B971F /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		A1F9ABC72AC86B9B000B971F /* HTMLUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLUtilities.swift; sourceTree = "<group>"; };
@@ -118,6 +111,7 @@
 		A11C0F722AC34479009A7733 /* SwiftTools */ = {
 			isa = PBXGroup;
 			children = (
+				A1ADFD232ACF22E000DD0C14 /* Modifiers */,
 				A1F9ABC62AC86B88000B971F /* Utilities */,
 				A12AE6E92AC51EAF00A3AE9C /* TypeExtensions */,
 				A11C0FB32AC35380009A7733 /* Views */,
@@ -153,15 +147,20 @@
 			path = TypeExtensions;
 			sourceTree = "<group>";
 		};
+		A1ADFD232ACF22E000DD0C14 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				A1ADFD242ACF22E000DD0C14 /* OverlayAppInfo.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 		A1F9ABAC2AC53570000B971F /* SwiftToolsDemo */ = {
 			isa = PBXGroup;
 			children = (
 				A1F9ABAD2AC53570000B971F /* SwiftToolsDemoApp.swift */,
 				A1F9ABB52AC53570000B971F /* SwiftToolsDemoApp.swift */,
-				A1F9ABB42AC53570000B971F /* ContentView.swift */,
-				A1F9ABAE2AC53570000B971F /* Assets.xcassets */,
 				A1F9ABB62AC53570000B971F /* Assets.xcassets */,
-				A1F9ABB22AC53570000B971F /* Preview Content */,
 				A1F9ABAF2AC53570000B971F /* Preview Content */,
 				A1F9ABB12AC53570000B971F /* ContentView.swift */,
 			);
@@ -173,15 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				A1F9ABB02AC53570000B971F /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		A1F9ABB22AC53570000B971F /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				A1F9ABB72AC53570000B971F /* Preview Assets.xcassets */,
-				A1F9ABB32AC53570000B971F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -294,11 +284,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1F9ABBE2AC53570000B971F /* Preview Assets.xcassets in Resources */,
 				A1F9ABBC2AC53570000B971F /* Assets.xcassets in Resources */,
 				A1F9ABBF2AC53570000B971F /* Preview Assets.xcassets in Resources */,
-				A1F9ABBD2AC53570000B971F /* Preview Assets.xcassets in Resources */,
-				A1F9ABBB2AC53570000B971F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +302,7 @@
 				A1F9ABC82AC86B9B000B971F /* HTMLUtilities.swift in Sources */,
 				A1F9ABC22AC8687D000B971F /* MarqueeText.swift in Sources */,
 				A11C0F752AC34479009A7733 /* SwiftTools.docc in Sources */,
+				A1ADFD252ACF22E000DD0C14 /* OverlayAppInfo.swift in Sources */,
 				A12AE6E82AC51EAB00A3AE9C /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,8 +313,6 @@
 			files = (
 				A1F9ABB82AC53570000B971F /* SwiftToolsDemoApp.swift in Sources */,
 				A1F9ABC02AC53570000B971F /* ContentView.swift in Sources */,
-				A11C0FB62AC3539D009A7733 /* StatusView.swift in Sources */,
-				A1F9ABBA2AC53570000B971F /* ContentView.swift in Sources */,
 				A1F9ABB92AC53570000B971F /* SwiftToolsDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -544,6 +530,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SwiftToolsDemo-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Swift Tools Demo";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -585,6 +573,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SwiftToolsDemo-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Swift Tools Demo";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

@@ -8,46 +8,65 @@
 import SwiftUI
 
 
+
+
+
 public struct DynamicStack<Content: View>: View {
     
     var orientation:         Axis.Set
+    
     var horizontalAlignment: HorizontalAlignment
     var verticalAlignment:   VerticalAlignment
+    
     var horizontalSpacing:   CGFloat?
     var verticalSpacing:     CGFloat?
+    
+    var isShowingDividers:   Bool
+    
     var content:             () -> Content
     
     
+    
+    
+    
     public init(_ orientation:        Axis.Set,
-         horizontalAlignment:  HorizontalAlignment = .center,
-         verticalAlignment:    VerticalAlignment   = .center,
-         spacing:              CGFloat?            = nil,
-         @ViewBuilder content: @escaping () -> Content) {
+                horizontalAlignment:  HorizontalAlignment = .center,
+                verticalAlignment:    VerticalAlignment   = .center,
+                spacing:              CGFloat?            = nil,
+                isShowingDividers:    Bool                = false,
+                @ViewBuilder content: @escaping () -> Content) {
          
         self.orientation         = orientation
         self.horizontalAlignment = horizontalAlignment
         self.verticalAlignment   = verticalAlignment
         self.horizontalSpacing   = spacing
         self.verticalSpacing     = spacing
+        self.isShowingDividers   = isShowingDividers
         self.content             = content
     }
     
     
+    
     public init(_ orientation:        Axis.Set,
-         horizontalAlignment:  HorizontalAlignment = .center,
-         verticalAlignment:    VerticalAlignment   = .center,
-         horizontalSpacing:    CGFloat?            = nil,
-         verticalSpacing:      CGFloat?            = nil,
-         @ViewBuilder content: @escaping () -> Content) {
+                horizontalAlignment:  HorizontalAlignment = .center,
+                verticalAlignment:    VerticalAlignment   = .center,
+                horizontalSpacing:    CGFloat?            = nil,
+                verticalSpacing:      CGFloat?            = nil,
+                isShowingDividers:    Bool                = false,
+                @ViewBuilder content: @escaping () -> Content) {
         
         self.orientation         = orientation
         self.horizontalAlignment = horizontalAlignment
         self.verticalAlignment   = verticalAlignment
         self.horizontalSpacing   = horizontalSpacing
         self.verticalSpacing     = verticalSpacing
+        self.isShowingDividers   = isShowingDividers
         self.content             = content
     
     }
+    
+    
+    
     
     
     public var body: some View {
@@ -58,6 +77,7 @@ public struct DynamicStack<Content: View>: View {
                 HStack(alignment: verticalAlignment,
                        spacing:   horizontalSpacing,
                        content:   content)
+                
                 
             default:
                 VStack(alignment: horizontalAlignment,
@@ -80,6 +100,9 @@ public struct StatusView: View {
     private let orientation: Axis.Set
     
     
+    
+    
+    
     public init(_ titleKey:  LocalizedStringKey,
                 titleColor:  Color?      = nil,
                 status:      StatusIcon,
@@ -96,6 +119,9 @@ public struct StatusView: View {
     }
     
     
+    
+    
+    
     public var body: some View {
     
         DynamicStack(orientation, horizontalSpacing: 10, verticalSpacing: 5) {
@@ -106,6 +132,7 @@ public struct StatusView: View {
                 default:
                     Image(systemName: status.rawValue).foregroundColor(iconColor).font(.title3).frame(height: 14)
             }
+            
             Text(titleKey)
                 .foregroundColor(titleColor)
                 .lineLimit(1)
@@ -113,6 +140,9 @@ public struct StatusView: View {
                 .fixedSize(horizontal: true, vertical: false)
         }
     }
+    
+    
+    
     
     
     public enum StatusIcon: String {
