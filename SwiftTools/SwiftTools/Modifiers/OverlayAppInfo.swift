@@ -1,6 +1,6 @@
 //
 //  OverlayAppInfo.swift
-//  Scapegoat
+//  SwiftTools
 //
 //  2023-10-03 Created by Blake Davis.
 //
