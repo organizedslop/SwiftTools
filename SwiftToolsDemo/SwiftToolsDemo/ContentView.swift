@@ -32,7 +32,8 @@ struct ContentView: View {
            
             let text =  """
                 <h1>Attributed Text</h1>
-                <h2>Subheading</h2>
+                <br></br>
+                <h2>Convert HTML tags</h2>
                 <h3>Heading3</h3>
                 <p>This is a paragraph.</p>
                 <b>Bold</b>
