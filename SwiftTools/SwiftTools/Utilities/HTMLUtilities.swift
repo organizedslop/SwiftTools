@@ -10,7 +10,7 @@
 
 
 // =============================================================================
-// MARK: - Reference
+// MARK: Reference
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 //
 // let rawHTML: String = "example &amp; test"
@@ -29,7 +29,7 @@ import SwiftUI
 
 
 // -----------------------------------------------------------------------------
-// MARK: - Convert HTML
+// MARK: Convert HTML
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 public func convertHTML(_ text: String) -> NSAttributedString?{
@@ -53,13 +53,13 @@ public func convertHTML(_ text: String) -> NSAttributedString?{
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 internal class HTML2TextParser {
-    /// The result of the parser's work.
+    // The result of the parser's work
     internal private(set) var formattedText = Text("")
-    /// HTML-tagged text.
+    // HTML-tagged text
     private let htmlString: String
-    /// Set of currently active tags.
+    // Set of currently active tags.
     private var tags: Set<String> = []
-    /// Set of supported tags and associated modifiers.
+    // Supported tags and associated modifiers.
     private let availableTags: Dictionary<String, (Text) -> (Text)>
 
 

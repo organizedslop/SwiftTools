@@ -1,16 +1,14 @@
 //
 //  OverlayAppInfo.swift
-//  Scapegoat
+//  SwiftTools
 //
-//  2023-10-03 Created by Blake Davis.
+//  2023-10-03 Created by Blake.
 //
 
 import Foundation
 import SwiftUI
 
 
-// 
-//
 //
 // Example usage:
 //
@@ -21,7 +19,6 @@ import SwiftUI
 //                                          Text("Additional stuff")
 //                                      }
 //                                  ))
-//
 //
 
 
